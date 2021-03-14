@@ -1,0 +1,192 @@
+[
+  {
+    "createdTime": 1614870355983,
+    "updatedTime": 1615024182085,
+    "createdBy": "zpfsf1x4voz",
+    "changedBy": "zpfsf1x4voz",
+    "id": "1a2mpvr746lf",
+    "name": "Acme Rideshare HR",
+    "topicDomain": "acme/rideshare/hr",
+    "description": "",
+    "enforceUniqueTopicNames": true,
+    "schemas": [
+      {
+        "createdTime": 1614881093314,
+        "updatedTime": 1615452349539,
+        "createdBy": "zpfsf1x4voz",
+        "changedBy": "zpfsf1x4voz",
+        "id": "1a2mpvr747qt",
+        "name": "EmployeeCreateDto",
+        "shared": false,
+        "description": "<p><br></p>",
+        "contentType": "JSON",
+        "content": null,
+        "applicationDomainId": "1a2mpvr746lf",
+        "revisionNumber": 2,
+        "versions": [
+          {
+            "createdTime": 1615452349542,
+            "updatedTime": 1615452349542,
+            "createdBy": "zpfsf1x4voz",
+            "changedBy": "zpfsf1x4voz",
+            "id": "1a2mpvr77aof",
+            "schemaId": "1a2mpvr747qt",
+            "name": "2",
+            "versionNumber": "2",
+            "content": "{\n  \"definitions\": {},\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"http://example.com/root.json\",\n  \"type\": \"object\",\n  \"title\": \"The Root Schema\",\n  \"required\": [\n    \"employee_id\",\n    \"name\",\n    \"gender\",\n    \"ssn\",\n    \"salary\",\n    \"age\"\n  ],\n  \"properties\": {\n    \"employee_id\": {\n      \"$id\": \"#/properties/employee_id\",\n      \"type\": \"integer\",\n      \"title\": \"The Employee_id Schema\"\n    },\n    \"gender\": {\n      \"$id\": \"#/properties/gender\",\n      \"type\": \"string\",\n      \"title\": \"The Gender Schema\",\n      \"default\": \"\",\n      \"examples\": [\n        \"male\",\n        \"female\"\n      ]\n    },\n    \"name\": {\n      \"$id\": \"#/properties/name\",\n      \"type\": \"string\",\n      \"title\": \"The Name Schema\",\n      \"default\": \"\"\n    },\n    \"ssn\": {\n      \"$id\": \"#/properties/ssn\",\n      \"type\": \"string\",\n      \"title\": \"The SSN Schema\",\n      \"default\": \"\"\n    },\n    \"salary\": {\n      \"$id\": \"#/properties/salary\",\n      \"type\": \"number\",\n      \"title\": \"The Salary Schema\",\n      \"default\": 0\n    },\n    \"age\": {\n      \"$id\": \"#/properties/age\",\n      \"type\": \"integer\",\n      \"title\": \"The Age Schema\",\n      \"default\": \"\"\n    }\n  }\n}",
+            "schemaRegistryId": "",
+            "revisionNumber": 1,
+            "type": "schemaVersion"
+          },
+          {
+            "createdTime": 1614881093314,
+            "updatedTime": 1614881093314,
+            "createdBy": "zpfsf1x4voz",
+            "changedBy": "zpfsf1x4voz",
+            "id": "1a2mpvr747rb",
+            "schemaId": "1a2mpvr747qt",
+            "name": "1",
+            "versionNumber": "1",
+            "content": "{\n  \"definitions\": {},\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"http://example.com/root.json\",\n  \"type\": \"object\",\n  \"title\": \"The Root Schema\",\n  \"required\": [\n    \"employee_id\",\n    \"name\",\n    \"gender\",\n    \"ssn\",\n    \"salary\",\n    \"age\"\n  ],\n  \"properties\": {\n    \"employee_id\": {\n      \"$id\": \"#/properties/employee_id\",\n      \"type\": \"integer\",\n      \"title\": \"The Employee_id Schema\"\n    },\n    \"gender\": {\n      \"$id\": \"#/properties/gender\",\n      \"type\": \"string\",\n      \"title\": \"The Gender Schema\",\n      \"default\": \"\",\n      \"examples\": [\n        \"male\",\n        \"female\"\n      ]\n    },\n    \"name\": {\n      \"$id\": \"#/properties/name\",\n      \"type\": \"string\",\n      \"title\": \"The Name Schema\",\n      \"default\": \"\"\n    },\n    \"ssn\": {\n      \"$id\": \"#/properties/ssn\",\n      \"type\": \"string\",\n      \"title\": \"The SSN Schema\",\n      \"default\": \"\"\n    },\n    \"salary\": {\n      \"$id\": \"#/properties/salary\",\n      \"type\": \"number\",\n      \"title\": \"The Salary Schema\",\n      \"default\": 0\n    },\n    \"age\": {\n      \"$id\": \"#/properties/age\",\n      \"type\": \"integer\",\n      \"title\": \"The Age Schema\",\n      \"default\": \"\"\n    }\n  }\n}",
+            "schemaRegistryId": "",
+            "revisionNumber": 1,
+            "type": "schemaVersion"
+          }
+        ],
+        "type": "schema"
+      },
+      {
+        "createdTime": 1614880744682,
+        "updatedTime": 1615452199535,
+        "createdBy": "zpfsf1x4voz",
+        "changedBy": "zpfsf1x4voz",
+        "id": "1a2mpvr747ov",
+        "name": "EmployeeCreate",
+        "shared": false,
+        "description": "",
+        "contentType": "JSON",
+        "content": null,
+        "applicationDomainId": "1a2mpvr746lf",
+        "revisionNumber": 3,
+        "versions": [
+          {
+            "createdTime": 1614880917625,
+            "updatedTime": 1615452199536,
+            "createdBy": "zpfsf1x4voz",
+            "changedBy": "zpfsf1x4voz",
+            "id": "1a2mpvr747pp",
+            "schemaId": "1a2mpvr747ov",
+            "name": "1",
+            "versionNumber": "1",
+            "content": "{\n  \"definitions\": {},\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"http://example.com/root.json\",\n  \"type\": \"object\",\n  \"title\": \"The Root Schema\",\n  \"required\": [\n    \"employee_id\",\n    \"name\",\n    \"gender\",\n    \"ssn\",\n    \"salary\",\n    \"birthDate\"\n  ],\n  \"properties\": {\n    \"employee_id\": {\n      \"$id\": \"#/properties/employee_id\",\n      \"type\": \"integer\",\n      \"title\": \"The Employee_id Schema\"\n    },\n    \"gender\": {\n      \"$id\": \"#/properties/gender\",\n      \"type\": \"string\",\n      \"title\": \"The Gender Schema\",\n      \"default\": \"\",\n      \"examples\": [\n        \"male\",\n        \"female\"\n      ]\n    },\n    \"name\": {\n      \"$id\": \"#/properties/name\",\n      \"type\": \"string\",\n      \"title\": \"The Name Schema\",\n      \"default\": \"\"\n    },\n    \"ssn\": {\n      \"$id\": \"#/properties/ssn\",\n      \"type\": \"string\",\n      \"title\": \"The SSN Schema\",\n      \"default\": \"\"\n    },\n    \"salary\": {\n      \"$id\": \"#/properties/salary\",\n      \"type\": \"number\",\n      \"title\": \"The Salary Schema\",\n      \"default\": 0.0\n    },\n    \"birthDate\": {\n      \"$id\": \"#/properties/birthDate\",\n      \"type\": \"string\",\n      \"title\": \"The BirthDate Schema\",\n      \"default\": \"\"\n    },\n    \"age\": {\n      \"$id\": \"#/properties/age\",\n      \"type\": \"integer\",\n      \"title\": \"The Age Schema\",\n      \"default\": \"\"\n    }\n  }\n}",
+            "schemaRegistryId": "",
+            "revisionNumber": 2,
+            "type": "schemaVersion"
+          }
+        ],
+        "type": "schema"
+      }
+    ],
+    "events": [
+      {
+        "createdTime": 1614871014888,
+        "updatedTime": 1615025322082,
+        "createdBy": "zpfsf1x4voz",
+        "changedBy": "zpfsf1x4voz",
+        "id": "1a2mpvr746pb",
+        "name": "EmployeeCreatedDto",
+        "version": "0.0.1",
+        "shared": false,
+        "topicName": "acme/rideshare/hr/employee/created/dto",
+        "description": "<p><br></p>",
+        "schemaId": "1a2mpvr747qt",
+        "schemaVersionId": "1a2mpvr747rb",
+        "applicationDomainId": "1a2mpvr746lf",
+        "revisionNumber": 4,
+        "brokerType": "solace",
+        "keyPrimitivePayloadType": null,
+        "valuePrimitivePayloadType": null,
+        "type": "event"
+      },
+      {
+        "createdTime": 1614870950034,
+        "updatedTime": 1615375074000,
+        "createdBy": "zpfsf1x4voz",
+        "changedBy": "zpfsf1x4voz",
+        "id": "1a2mpvr746oh",
+        "name": "EmployeeCreated",
+        "version": "0.0.1",
+        "shared": false,
+        "topicName": "acme/rideshare/hr/employee/created",
+        "description": "<p>This event is published by SAP HCM system and triggered based on the driver registration as part of the driver management app within the ACME Rideshare application domain.</p>",
+        "schemaId": "1a2mpvr747ov",
+        "schemaVersionId": "1a2mpvr747pp",
+        "applicationDomainId": "1a2mpvr746lf",
+        "revisionNumber": 6,
+        "brokerType": "solace",
+        "keyPrimitivePayloadType": null,
+        "valuePrimitivePayloadType": null,
+        "type": "event"
+      }
+    ],
+    "applications": [
+      {
+        "createdTime": 1614870680375,
+        "updatedTime": 1614881273935,
+        "createdBy": "zpfsf1x4voz",
+        "changedBy": "zpfsf1x4voz",
+        "id": "1a2mpvr746mt",
+        "name": "AzureEventHub",
+        "version": "0.0.1",
+        "description": "<p><br></p>",
+        "applicationDomainId": "1a2mpvr746lf",
+        "producedEventIds": [],
+        "consumedEventIds": [
+          "1a2mpvr746pb"
+        ],
+        "revisionNumber": 2,
+        "applicationClass": "unspecified",
+        "type": "application"
+      },
+      {
+        "createdTime": 1614870748435,
+        "updatedTime": 1615025216542,
+        "createdBy": "zpfsf1x4voz",
+        "changedBy": "zpfsf1x4voz",
+        "id": "1a2mpvr746nn",
+        "name": "SAP_HCM",
+        "version": "0.0.1",
+        "description": "<p><br></p>",
+        "applicationDomainId": "1a2mpvr746lf",
+        "producedEventIds": [
+          "1a2mpvr746oh"
+        ],
+        "consumedEventIds": [],
+        "revisionNumber": 3,
+        "applicationClass": "unspecified",
+        "type": "application"
+      },
+      {
+        "createdTime": 1614870430781,
+        "updatedTime": 1615375319171,
+        "createdBy": "zpfsf1x4voz",
+        "changedBy": "zpfsf1x4voz",
+        "id": "1a2mpvr746lz",
+        "name": "TransitConverter",
+        "version": "0.0.1",
+        "description": "<p>The TransitConverter microservice is converting the EmployeeCreated event into an object for data transfer. It should be exchanged with cloud services, where different security policies apply. One requirement is that confidential data needs to be encryped before it is transferred to Microsoft Azure Event Hub, independent of having SSL/TLS in place or not. Therefore, HashiCorp Vault is used for encryption, decryption and management of the secrets.</p>",
+        "applicationDomainId": "1a2mpvr746lf",
+        "producedEventIds": [
+          "1a2mpvr746pb"
+        ],
+        "consumedEventIds": [
+          "1a2mpvr746oh"
+        ],
+        "revisionNumber": 3,
+        "applicationClass": "unspecified",
+        "type": "application"
+      }
+    ],
+    "type": "applicationDomain"
+  }
+]

@@ -1,0 +1,125 @@
+components:
+  schemas:
+    EmployeeCreate:
+      $schema: 'http://json-schema.org/draft-07/schema#'
+      type: object
+      title: The Root Schema
+      definitions: {}
+      required:
+        - employee_id
+        - name
+        - gender
+        - ssn
+        - salary
+        - birthDate
+      properties:
+        gender:
+          default: ''
+          examples:
+            - male
+            - female
+          type: string
+          title: The Gender Schema
+          $id: '#/properties/gender'
+        employee_id:
+          type: integer
+          title: The Employee_id Schema
+          $id: '#/properties/employee_id'
+        name:
+          default: ''
+          type: string
+          title: The Name Schema
+          $id: '#/properties/name'
+        salary:
+          default: 0
+          type: number
+          title: The Salary Schema
+          $id: '#/properties/salary'
+        birthDate:
+          default: ''
+          type: string
+          title: The BirthDate Schema
+          $id: '#/properties/birthDate'
+        age:
+          default: ''
+          type: integer
+          title: The Age Schema
+          $id: '#/properties/age'
+        ssn:
+          default: ''
+          type: string
+          title: The SSN Schema
+          $id: '#/properties/ssn'
+      $id: 'http://example.com/root.json'
+    EmployeeCreateDto:
+      $schema: 'http://json-schema.org/draft-07/schema#'
+      type: object
+      title: The Root Schema
+      definitions: {}
+      required:
+        - employee_id
+        - name
+        - gender
+        - ssn
+        - salary
+        - age
+      properties:
+        gender:
+          default: ''
+          examples:
+            - male
+            - female
+          type: string
+          title: The Gender Schema
+          $id: '#/properties/gender'
+        employee_id:
+          type: integer
+          title: The Employee_id Schema
+          $id: '#/properties/employee_id'
+        name:
+          default: ''
+          type: string
+          title: The Name Schema
+          $id: '#/properties/name'
+        salary:
+          default: 0
+          type: number
+          title: The Salary Schema
+          $id: '#/properties/salary'
+        age:
+          default: ''
+          type: integer
+          title: The Age Schema
+          $id: '#/properties/age'
+        ssn:
+          default: ''
+          type: string
+          title: The SSN Schema
+          $id: '#/properties/ssn'
+      $id: 'http://example.com/root.json'
+  messages:
+    EmployeeCreatedDto:
+      payload:
+        $ref: '#/components/schemas/EmployeeCreateDto'
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    EmployeeCreated:
+      payload:
+        $ref: '#/components/schemas/EmployeeCreate'
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+channels:
+  acme/rideshare/hr/employee/created:
+    subscribe:
+      message:
+        $ref: '#/components/messages/EmployeeCreated'
+  acme/rideshare/hr/employee/created/dto:
+    publish:
+      message:
+        $ref: '#/components/messages/EmployeeCreatedDto'
+asyncapi: 2.0.0
+info:
+  x-application-class: unspecified
+  title: TransitConverter
+  x-view: provider
+  version: 0.0.1
